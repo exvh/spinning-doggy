@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+    sh ~/.local/bin/dogprint
+
+else
+    for ((i=1; i<=$1; i++)); do
+        sh ~/.local/bin/dogprint
+    done
+fi
